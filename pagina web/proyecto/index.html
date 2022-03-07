@@ -7,53 +7,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
-   
+
 </head>
 
 <body>
-    <header><img src="./imagenes/Logo.jpg" width="100" height="100"></header>
-
-    <nav>
-        <ul class="direcciones">
-
-            <section class="flex-container">
-
-                <div class="caja">
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-danger bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./imagenes/Logo.jpg"><img src="./imagenes/Logo.jpg" width="50" height="50"
+                        alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../proyecto/secciones/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../proyecto/secciones/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../proyecto/secciones/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../proyecto/secciones/promociones.html">Ofertas</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-
-                <div class="caja">
-                    <li>
-                        <a href="./secciones/galeria.html">Galeria</a>
-                    </li>
-                </div>
-
-                <div class="caja">
-                    <li>
-                        <a href="./secciones/nosotros.html">Nosotros</a>
-                    </li>
-                </div>
-
-                <div class="caja">
-                    <li>
-                        <a href="./secciones/contacto.html">Contacto</a>
-                    </li>
-                </div>
-                <div class="caja">
-                    <li>
-                        <a href="./secciones/promociones.html">Promociones</a>
-                    </li>
-                </div>
-
-            </section>
-
-
-        </ul>
-    </nav>
+            </div>
+        </nav>
+    </header>
     <h1 class="titulo"><u>Inicio</u></h1>
     <section class="videosYoutube">
         <div class="main__conteiner--video">
@@ -70,43 +64,50 @@
                 <div>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./imagenes/index.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./imagenes/index.jpg" class="d-block w-100" alt="...">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./imagenes/Vitnik-–-Colección-fitness-Primavera-Verano-2020.jpg" class="d-block w-100" alt="...">
-                          </div>
+                            <div class="carousel-item active">
+                                <img src="./imagenes/index.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/index.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/Vitnik-–-Colección-fitness-Primavera-Verano-2020.jpg"
+                                    class="d-block w-100" alt="...">
+                            </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
                         </button>
-                      </div>
+                    </div>
                 </div>
-                        
+
             </div>
             <div>
                 <div class="row g-0 bg-light position-relative">
                     <div class="col-md-6 mb-md-0 p-md-4">
-                      <img src="https://bugaderiasos.net/wp-content/uploads/2012/03/lavar-ropa-deporte.jpg" class="w-100" alt="...">
+                        <img src="https://bugaderiasos.net/wp-content/uploads/2012/03/lavar-ropa-deporte.jpg"
+                            class="w-100" alt="...">
                     </div>
                     <div class="col-md-6 p-4 ps-md-0">
-                      <p>Click en el siguiente enlace para ver más ropa deportiva</p>
-                      <a href="./secciones/galeria.html" class="stretched-link">Ve al lugar</a>
+                        <p>Click en el siguiente enlace para ver más ropa deportiva</p>
+                        <a href="./secciones/galeria.html" class="stretched-link">Ve al lugar</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
 
@@ -142,25 +143,19 @@
 
     </section>
     <footer>
-        <ul class="redes">
-            <div class="direc">
-                <li><a href=https://www.facebook.com>Facebook </a> </li>
-            </div>
-            <div class="direc">
-                <li><a href=https://twitter.com>Twitter </a> </li>
-            </div>
-            <div class="direc">
-                <li><a href=https://instagram.com>Instagram </a> </li>
-            </div>
-            <div class="direc">
-                <li><a href=https://web.whatsapp.com>Whatsapp </a> </li>
-            </div>
-        </ul>
-        <div class="loggo"><img src="./imagenes/pngtree-shop-png-image_1699051.jpg" width="150" height="140">
-        </div>
-
+        <nav class="nav">
+            <a class="nav-link active" aria-current="page" href="https://www.facebook.com">Facebook</a>
+            <a class="nav-link" href="https://twitter.com">Twitter</a>
+            <a class="nav-link" href="https://instagram.com">Instagram</a>
+            <a class="nav-link" href="https://web.whatsapp.com">Whatsapp</a>
+            
+           
+        </nav>
+        <div class="loggo"><img src="./imagenes/pngtree-shop-png-image_1699051.jpg" width="150" height="140"> </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

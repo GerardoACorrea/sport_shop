@@ -1,0 +1,25 @@
+.titulo {
+    color: $color;
+    background-color: $fondocolor;
+    border: 2px solid black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    transition: all 300ms;
+  }
+  .titulo {
+    animation-name: cambiarColor;
+    animation-duration: 2s;
+  }
+  @keyframes cambiarColor {
+    0% {
+      background-color: rgb(150, 236, 208);
+    }
+  
+    50% {
+      background-color: rgb(71, 178, 240);
+    }
+  
+    100% {
+      background-color: rgb(19, 135, 202);
+    }
+  }

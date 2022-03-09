@@ -1,0 +1,31 @@
+@import "variables";
+@import "generales";
+@import "videos";
+@import "img";
+@import "titulo";
+
+@media only screen and (max-width: 720px) {
+  .main__picture--container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media only screen and (max-width: 576px) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+  .videosYoutube {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main__picture--container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}

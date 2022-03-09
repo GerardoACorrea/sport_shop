@@ -1,0 +1,40 @@
+.fotos_img {
+    width: 500px;
+    height: 600px;
+}  
+
+.main__picture {
+    display: flex;
+    justify-content: center;
+  }
+
+.main__picture--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    background-color: $fondocolor;
+    border: 2px solid black;
+    padding: 10px;
+    img{
+        transition: $transicion;
+        &:hover {
+          transform: scale(1.07);
+        }
+    }
+  }
+
+  .loggo {
+    display: flex;
+    justify-content: end;
+    transition: 300ms;
+  }
+  .loggo:hover {
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+  }
+
+  

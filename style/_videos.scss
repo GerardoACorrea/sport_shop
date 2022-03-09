@@ -1,0 +1,44 @@
+.videosYoutube {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+    .main__conteiner--video {
+       color: black;
+      background-color: $fondocolor;
+        border: 2px solid black;
+        padding: 2%;
+        margin: 10px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: xx-large;
+        text-align: center;
+
+    }
+
+}
+
+.videosYoutube {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .main__conteiner {
+        background-color: $fondocolor;
+        border: 2px solid black;
+        padding: 2%;
+        margin: 10px;
+        line-height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        
+      }
+ }
+
+ .videos iframe {
+    transition: $transicion;
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+  

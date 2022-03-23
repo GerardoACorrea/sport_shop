@@ -1,28 +1,50 @@
+.parrafo_box {
+  background-color: #c53030;
+  width: 300px;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Times New Roman', Times, serif; }
+
+.textos--h3 {
+  background-color: #e94808; }
+
+.textos--h4 {
+  background-color: #e49c18; }
+
+.textos--h5 {
+  background-color: #e0cd1c; }
+
+.textos--h3 {
+  font-size: 3rem; }
+
+.textos--h4 {
+  font-size: 2rem; }
+
+.textos--h5 {
+  font-size: 1rem; }
+
+.parrafo, .parrafo--variable {
+  border: 4px solid black;
+  background-color: yellow; }
+
+.parrafo--variable {
+  margin: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: xx-large;
+  text-align: center; }
+
+.ofertas {
+  color: black;
+  background-color: #128eb4;
+  font-size: xx-large;
+  text-align: center; }
+
 * {
   padding: 0;
   margin: 0; }
 
 body {
   background-color: white; }
-
-.caja {
-  border: 2px solid black;
-  background-color: #e9dada;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 150px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  margin: 2px; }
-
-.titulo {
-  color: #100f16;
-  background-color: #e9dada;
-  border: 2px solid black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: center;
-  transition: all 300ms; }
 
 ul {
   list-style: none;
@@ -31,77 +53,13 @@ ul {
 li {
   display: inline; }
 
-.direcciones {
-  font-size: x-large; }
-
-.redes {
-  border: 1px solid black;
-  background-color: #828dec;
-  padding: 10px;
-  font-size: x-large;
+footer {
   display: flex;
-  flex-direction: row;
-  font-size: x-large; }
-
-.direc {
-  border: 1px solid black;
-  background-color: #e9dada;
-  color: black;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  width: 110px;
-  height: 60px;
-  line-height: 50px;
-  text-align: center;
-  margin: 2px; }
-
-.videosYoutube {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); }
-
-.videosYoutube .main__conteiner--video {
-  background-color: #e9dada;
-  border: 2px solid black;
-  padding: 2%;
-  margin: 10px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: xx-large;
-  text-align: center; }
-
-.videosYoutube .main__conteiner {
-  background-color: #e9dada;
-  border: 2px solid black;
-  padding: 2%;
-  margin: 10px;
-  line-height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly; }
-
-.principio {
-  display: flex;
-  flex-direction: column; }
-
-.fotos_img {
-  width: 500px;
-  height: 600px; }
-
-.main__picture {
-  display: flex;
-  justify-content: center; }
-
-.main__picture--container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-row-gap: 10px;
-  grid-column-gap: 10px;
-  background-color: #e9dada;
-  border: 2px solid black;
-  padding: 10px; }
+  justify-content: space-around;
+  align-items: center; }
 
 .tienda {
-  background-color: #e9dada;
+  background-color: #066b85;
   border: 2px solid black;
   padding: 5%;
   margin: 8%;
@@ -127,34 +85,78 @@ li {
   flex-direction: row;
   text-align: center; }
 
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-
-.promo__img {
+.videosYoutube {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 10px; }
+  grid-template-columns: repeat(2, 1fr); }
+  .videosYoutube .main__conteiner--video {
+    color: black;
+    background-color: #066b85;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 10px;
+    font-family: "Times New Roman", Times, serif;
+    font-size: xx-large;
+    text-align: center; }
 
-.main__picture--container img {
-  transition: 0.3s ease all; }
-
-.main__picture--container img:hover {
-  transform: scale(1.07); }
+.videosYoutube {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+  .videosYoutube .main__conteiner {
+    background-color: #066b85;
+    border: 2px solid black;
+    padding: 2%;
+    margin: 10px;
+    line-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
 
 .videos iframe {
   transition: 0.3s ease all; }
+  .videos iframe:hover {
+    transform: scale(1.07); }
 
-.videos iframe:hover {
-  transform: scale(1.07); }
+.fotos_img {
+  width: 500px;
+  height: 600px; }
+
+.main__picture {
+  display: flex;
+  justify-content: center; }
+
+.main__picture--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  background-color: #066b85;
+  border: 2px solid black;
+  padding: 10px; }
+  .main__picture--container img {
+    transition: 0.3s ease all; }
+    .main__picture--container img:hover {
+      transform: scale(1.07); }
+
+.loggo {
+  display: flex;
+  justify-content: end;
+  transition: 300ms; }
+
+.loggo:hover {
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  transform-style: preserve-3d; }
+
+.titulo {
+  color: black;
+  background-color: #066b85;
+  border: 2px solid black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  transition: all 300ms; }
 
 .titulo {
   animation-name: cambiarColor;
@@ -167,17 +169,6 @@ footer {
     background-color: #47b2f0; }
   100% {
     background-color: #1387ca; } }
-
-.loggo {
-  display: flex;
-  justify-content: end;
-  transition: 300ms; }
-
-.loggo:hover {
-  -webkit-transform: rotateY(180deg);
-  -webkit-transform-style: preserve-3d;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d; }
 
 @media only screen and (max-width: 720px) {
   .main__picture--container {
@@ -198,3 +189,12 @@ footer {
   .main__picture--container {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); } }
+
+h3 {
+  background-color: white; }
+
+h4 {
+  background-color: white; }
+
+h5 {
+  background-color: rgb(0, 0, 0); }
